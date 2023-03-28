@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="icon" type="image/png" href="static/images/logo.png" />
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1 class="logo-font">The Yonsei Shop</h1>
+      <div class="navbar">
+        <a href="login.html">Login</a>
+        <a href="signup.html">Sign up</a>
+      </div>
+    </div>
+    <div class="main">
+      <div class="form-wrapper">
+        <form action="" method="POST">
+          <fieldset>
+            <legend>New Membership</legend>
+            <div class="form-group">
+              <label for="username">User ID:</label>
+              <input
+                type="text"
+                name="username"
+                id="username"
+                maxlength="16"
+                placeholder="Choose an ID for login"
+                autofocus
+                required
+                autocomplete="off"
+                autocapitalize="off"
+                spellcheck="false"
+              />
+            </div>
+            <div class="form-group">
+              <label for="display_name">Display Name:</label>
+              <input
+                type="text"
+                name="display_name"
+                id="display_name"
+                placeholder="Your real name"
+                spellcheck="false"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="pwd">Password:</label>
+              <input
+                type="password"
+                id="pwd"
+                name="pwd"
+                required
+                placeholder="Choose a strong password"
+              />
+            </div>
+            <div class="form-group">
+              <label for="pwd_confirmation">Password Confirmation:</label>
+              <input
+                type="password"
+                id="pwd_confirmation"
+                name="pwd_confirmation"
+                placeholder="Re-enter the password"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number:</label>
+              <input
+                type="tel"
+                id="phone"
+                placeholder="010-1234-5678"
+                name="phone"
+                pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"
+              />
+            </div>
+            <div class="form-group">
+              <label>Gender:</label>
+              <input type="radio" id="male" name="gender" value="male" />
+              <label style="margin: 0" for="male">Male</label>
+              <input type="radio" id="female" name="gender" value="female" />
+              <label style="margin: 0" for="female">Female</label>
+              <input
+                type="radio"
+                id="other"
+                name="gender"
+                value="other"
+                required
+              />
+              <label style="margin: 0" for="other">Other</label>
+            </div>
+
+            <div class="form-group">
+              <label for="school_year" style="margin-right: 6px"
+                >School Year:</label
+              >
+              <input
+                type="number"
+                id="school_year"
+                name="school_year"
+                min="1"
+                max="6"
+                step="1"
+                required
+              />
+              <label for="birthday" style="margin-right: 6px">Birthday:</label>
+              <input
+                type="date"
+                id="birthday"
+                name="birthday"
+                required
+                pattern="\d{4}-\d{2}-\d{2}"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="checkbox"
+                id="agreement"
+                name="agreement"
+                value="true"
+                required
+              />
+              <label for="agreement" style="margin: 0"
+                >I agree to <span class="logo-font">The Yonsei Shop</span> terms
+                and conditions.</label
+              >
+            </div>
+            <div class="form-group">
+              <input type="submit" value="Sign Up" />
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
