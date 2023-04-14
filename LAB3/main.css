@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
+* {
+  font-family: "Noto Sans KR", sans-serif;
+  color: #333;
+}
+
+body {
+  margin: 0;
+}
+
+.logo-font {
+  font-family: "Lobster", cursive;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 24px;
+  box-shadow: rgba(183, 190, 196, 0.2) 0px 8px 24px;
+}
+
+.logo {
+  font-size: 38px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #003377;
+}
+
+.logo-container {
+  position: relative;
+  animation-name: logo_slide;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes logo_slide {
+  from {
+    left: 800px;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+.navbar a {
+  display: inline-block;
+  text-align: center;
+  color: #003377;
+  border: 2px solid #003377;
+  padding: 1rem 1.5rem;
+  border-radius: 36px;
+  width: 60px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #003377;
+  color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .form-wrapper {
+  margin-top: 2rem;
+}
+
+fieldset {
+  border: none;
+  display: block;
+}
+
+fieldset legend {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+div.form-group input[type="text"],
+[type="tel"],
+[type="password"] {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+div.form-group {
+  margin: 8px;
+}
+
+div.form-group input {
+  padding: 1rem;
+  margin-top: 8px;
+  border: 2px solid #888;
+  border-radius: 36px;
+  color: #222;
+}
+
+div.form-group label {
+  color: #666;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+div.form-group input[type="submit"] {
+  background-color: #003377;
+  color: white;
+  border: none;
+  border-radius: 36px;
+  width: 100%;
+  cursor: pointer;
+}
+
+input:focus,
+input:active {
+  outline-color: #003377;
+}
+
+fieldset > span {
+  display: block;
+  text-align: center;
+  font-size: 13px;
+  font-style: italic;
+  color: #777;
+}
+
+fieldset > span a {
+  text-decoration: none;
+  color: blue;
+}
+
+div.form-group input[type="submit"]:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+/* beginning of index.html style */
+
+.wrapper {
+  padding: 1.5rem 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section {
+  max-width: 1020px;
+}
+
+.section-title {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+}
+
+.section .items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.items .item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.items .item:hover {
+  transition: transform 2s;
+  transform: scale(115%, 115%);
+}
+
+.items .item .book-title {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-size: 22px;
+}
+
+.item img {
+  width: 100%;
+  height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  border-radius: 6px;
+}
+
+.items .item:hover .book-title {
+  display: block;
+}
+
+.items .item:hover img {
+  filter: brightness(30%);
+}
+
+.footer {
+  background-color: #003377;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.footer h1 {
+  color: white;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+}
+
+.footer p {
+  font-size: 14px;
+  line-height: 2;
+  color: white;
+  text-indent: 1rem;
+  text-align: justify;
+  white-space: initial;
+  padding: 8px;
+}
+
+@media (min-width: 801px) {
+  .items .item {
+    width: 25%;
+  }
+}
+
+@media (max-width: 800px) {
+  .items .item {
+    width: 50%;
+  }
+  .items .item:hover {
+    transition: transform 2s;
+    transform: scale(110%, 110%);
+  }
+
+  .header {
+    flex-direction: column;
+  }
+
+  .navbar {
+    padding: 1rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .items .item {
+    width: 100%;
+  }
+
+  .items .item:hover {
+    transition: transform 2s;
+    transform: scale(105%, 105%);
+  }
+}

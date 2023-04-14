@@ -1,5 +1,7 @@
-## Repo For Internet Programming Class Assignment
+## Repo For Internet Programming Class Assignments
 
 ###### LAB #1 ✅DONE
 
 ###### LAB #2 ✅DONE
+
+###### LAB #3 ✅DONE
