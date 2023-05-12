@@ -1,0 +1,74 @@
+{
+  "books": [
+    {
+      "title": "Learn CSS in one day and LEARN IT WELL",
+      "price": 10,
+      "cover": "css1.jpg"
+    },
+    {
+      "title": "Learn to write CSS the awesome way",
+      "price": 8,
+      "cover": "css2.jpg"
+    },
+    {
+      "title": "HTML&CSS design and build websites",
+      "price": 20,
+      "cover": "HTML&CSS1.jpg"
+    },
+    {
+      "title": "Web page creation with HTML5 and CSS3",
+      "price": 15,
+      "cover": "HTML&CSS2.jpg"
+    },
+    {
+      "title": "The truth about HTML",
+      "price": 10,
+      "cover": "html1.jpg"
+    },
+    {
+      "title": "Learn HTML in 24 Hours",
+      "price": 15,
+      "cover": "html2.jpg"
+    },
+    {
+      "title": "Javascript: The Good Parts",
+      "price": 15,
+      "cover": "js1.jpg"
+    },
+    {
+      "title": "Javascript & JQuery",
+      "price": 20,
+      "cover": "js2.png"
+    },
+    {
+      "title": "Eloquent Javascript",
+      "price": 25,
+      "cover": "js3.jpg"
+    },
+    {
+      "title": "Functional Progamming In Javascript",
+      "price": 30,
+      "cover": "js4.png"
+    },
+    {
+      "title": "Progamming Basics with Python",
+      "price": 20,
+      "cover": "python1.png"
+    },
+    {
+      "title": "Learn Python The Hard Way",
+      "price": 25,
+      "cover": "python2.jpg"
+    },
+    {
+      "title": "The Hitchhiker's Guide to Python",
+      "price": 30,
+      "cover": "python3.jpg"
+    },
+    {
+      "title": "Introduction to Machine Learning with Python",
+      "price": 40,
+      "cover": "python4.jpg"
+    }
+  ]
+}
